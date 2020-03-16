@@ -1,0 +1,146 @@
+@charset "utf-8"
+
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+}
+
+/* header */
+header {
+    border-top: 10px solid #000000;
+}
+
+header h1 {
+    font-size: 2.0em;
+    margin: 40px 0 30px 0;
+    text-align: center;
+}
+
+header nav ul {
+    width: 940px;
+    margin: 0 auto 30px auto;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+header nav ul li {
+    float: left;
+    width: 150px;
+    margin-right: 2px;
+    text-align: center;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+.clearfix:after { /* :after擬似要素は、要素の直後に内容を挿入する際に使用。 */
+    content: ''; /* contentプロパティは要素を生成された値で置き換える。 contentプロパティを使用して挿入されたオブジェクトは無名の置換(現在の文書のスタイルに影響されない)要素になる しかし、置換要素の位置はCSSを使用して変更することができる */
+    display: block; /* displayとは要素の表示形式を指定するプロパティ インライン(組み込み)要素の表示形式をブロック要素(大枠)化させるため */
+    clear: both; /* clear 回り込みを解除する both 左寄せ、または右寄せされた全ての要素に対する回り込みを解除 */ /* floatを使用したことによる要素の回りこみを解除するため */
+} /* まとめ インライン要素をブロック要素に変換し、floatを使用したことによる要素の回りこみを解除 */
+
+header nav li a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+}
+
+header nav ul li a:hover,
+header nav ul li a:active,
+header nav ul li.current a {
+    background-color: rgb(0, 81, 255);
+}
+
+/* main */
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+main h2 {
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#main_image {
+    margin-bottom: 30px;
+}
+
+#main_content {
+    float: left;
+    width: 600px;
+}
+
+#sidebare {
+    float: right;
+    width: 300px;
+}
+
+#home h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    text-align: left;
+    border-bottom: 1px solid #000;
+    border-left: 10px solid #000;
+}
+
+#info dl {
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+#info dt {
+    float: left;
+    width: 8em;
+}
+
+campaign li {
+    line-height: 1.5;
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+/* sidebar */
+#sidebar ul {
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+/* footer */
+footer {
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
+
+footer ul {
+    margin-bottom: 20px;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a {
+    color: rgb(0, 101, 252);
+}
+
+footer ul li a:link {
+    text-decoration: none;
+}
+
+footer ul li a:hover,
+footer ul li a:active {
+    text-decoration: underline;
+}
